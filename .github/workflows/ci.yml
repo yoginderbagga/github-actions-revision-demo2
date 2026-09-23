@@ -1,0 +1,25 @@
+#Goal: This workflow install bats testing framework, display its version
+name: revisiting-github-actions
+on: [push]
+jobs: bats-testing-framework
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout the repo
+      uses: actions/checkout@v7
+
+    - name: Install node-js
+      uses: actions/setup-node@v7
+      with: 
+        node-version:'24'
+
+    - name: Install bats
+      run: npm install -g bats
+
+    - name: Display bats version
+      run: bats -v 
+
+
+  
+
+
+
