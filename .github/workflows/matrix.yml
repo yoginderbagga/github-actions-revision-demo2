@@ -1,6 +1,13 @@
 #Goal: Test Application on  Multiple Version on Multiple OS
 name: Matrix Strategy Demo
-on: [push, pull_request]
+
+on:
+  push: 
+    branches: [ "main" ]
+
+  issues:
+    types: [ "edited" ]   
+  workflow_dispatch: 
 
 #declaring strategy block
 
