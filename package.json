@@ -1,0 +1,11 @@
+{
+  "name": "matrix-demo-app",
+  "version": "1.0.0",
+  "description": "A minimal app to test GitHub Actions matrix builds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Success: All tests passed!' && exit 0"
+  },
+  "dependencies": {}
+}
+
